@@ -5,5 +5,9 @@
     <string name="versiculoDia">Salmos, 23</string>
     <string name="Encontrando"> Encontre<br></br> Palavra </string>
     <string name="EncontrandoA"> a </string>
+    <string name="AcessibilidadeHome">Botão Home</string>
+    <string name="AcessibilidadeBiblia">Botão Bíblia</string>
+    <string name="AcessibilidadeDoar">Botão Doar</string>
+    <string name="AcessibilidadePerfil">Botão Perfil</string>
 
 </resources>

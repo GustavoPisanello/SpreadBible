@@ -19,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.503"
-        app:srcCompat="@drawable/fundo1" />
+        app:srcCompat="@drawable/fundo1"
+        android:theme="@style/Theme.AppCompat.Light"/>
 
     <Button
         android:id="@+id/btnFale"
@@ -66,6 +67,7 @@
             android:layout_marginTop="23dp"
             android:layout_marginRight="20dp"
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeHome"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/outline_church_24" />
 
@@ -88,6 +90,7 @@
             android:layout_marginTop="-10dp"
 
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeBiblia"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/bibliagospel"
             tools:ignore="MissingConstraints"
@@ -101,6 +104,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
+            android:contentDescription="@string/AcessibilidadeDoar"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/baseline_handshake_24"
             tools:ignore="MissingConstraints" />
@@ -114,6 +118,7 @@
 
             android:layout_weight="1"
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadePerfil"
             app:srcCompat="@drawable/baseline_person_24" />
 
 

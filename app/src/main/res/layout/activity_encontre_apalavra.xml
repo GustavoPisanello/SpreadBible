@@ -50,6 +50,7 @@
             android:layout_marginTop="23dp"
             android:layout_marginRight="20dp"
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeHome"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/outline_church_24" />
 
@@ -72,6 +73,7 @@
             android:layout_marginTop="-10dp"
 
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeBiblia"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/bibliagospel"
             tools:ignore="MissingConstraints"
@@ -85,6 +87,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
+            android:contentDescription="@string/AcessibilidadeDoar"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/baseline_handshake_24"
             tools:ignore="MissingConstraints" />
@@ -98,6 +101,7 @@
 
             android:layout_weight="1"
             android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadePerfil"
             app:srcCompat="@drawable/baseline_person_24" />
 
 
@@ -136,10 +140,10 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.082" />
 
     <EditText
         android:id="@+id/editTextPesquisa"
