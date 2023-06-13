@@ -5,22 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/escurecedor"
-    tools:context=".EncontreAPalavra">
+    tools:context=".Cadastro">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="800dp"
-        android:layout_height="850dp"
+        android:id="@+id/imageView5"
+        android:layout_width="890dp"
+        android:layout_height="940dp"
+        android:layout_marginTop="6dp"
+        android:alpha="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/fundo2" />
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/capela" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/digiteNome"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/digiteSenha"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <EditText
+        android:id="@+id/repassword1"
+        android:layout_width="295dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="@string/digiteSenha2"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
 
     <ImageView
-        android:id="@+id/imgnuvem2"
+        android:id="@+id/imgnuvem1"
         android:layout_width="497dp"
         android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,53 +74,6 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/nuvem1" />
 
-    <ImageButton
-        android:id="@+id/btnBiblia"
-        android:layout_width="92dp"
-        android:layout_height="96dp"
-
-        android:background="@color/transp"
-        android:contentDescription="@string/AcessibilidadeBiblia"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bibliagospel"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/btnPerfil"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-
-        android:layout_weight="1"
-        android:background="@color/transp"
-        android:contentDescription="@string/AcessibilidadePerfil"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/baseline_person_24" />
-
-    <ImageButton
-        android:id="@+id/btnDoar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
-        android:contentDescription="@string/AcessibilidadeDoar"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/baseline_handshake_24"
-        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/btnHome"
@@ -108,76 +105,75 @@
         app:srcCompat="@drawable/biblifechada"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/txtEncontre"
-        android:layout_width="294dp"
-        android:layout_height="119dp"
-        android:fontFamily="@font/marvel"
-        android:shadowColor="@color/white"
-        android:shadowDx="2"
-        android:shadowRadius="7"
-        android:text="@string/Encontrando"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="46dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/btnBiblia"
+        android:layout_width="92dp"
+        android:layout_height="96dp"
+        android:background="@color/transp"
+        android:contentDescription="@string/AcessibilidadeBiblia"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imgnuvem1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bibliagospel"
+        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editTextPesquisa"
-        android:layout_width="295dp"
-        android:layout_height="64dp"
-        android:ems="10"
-        android:hint="Digite o Versículo"
-        android:inputType="text"
+    <ImageButton
+        android:id="@+id/btnDoar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/AcessibilidadeDoar"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/baseline_handshake_24"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btnPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/transp"
+        android:contentDescription="@string/AcessibilidadePerfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/baseline_person_24" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="43dp"
-        android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355"
-        app:srcCompat="@drawable/baseline_search_24" />
-
-    <TextView
-        android:id="@+id/txtVersiculo"
+        android:id="@+id/imgperfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/marvel"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.055"
+        app:srcCompat="@drawable/perfil" />
 
     <Button
-        android:id="@+id/btnPesquisar"
-        android:layout_width="71dp"
-        android:layout_height="71dp"
-        android:background="@color/transp"
-        android:backgroundTint="@color/transp"
-        android:contentDescription="@string/AcessibilidadePesquisar"
+        android:id="@+id/btnCadastrar"
+        android:layout_width="148dp"
+        android:layout_height="74dp"
+        android:background="@drawable/btn_arredondado"
+        android:backgroundTint="@color/amareloAngelical"
+        android:text="@string/cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
-
+        app:layout_constraintVertical_bias="0.774" />
 </androidx.constraintlayout.widget.ConstraintLayout>

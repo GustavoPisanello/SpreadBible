@@ -5,22 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/escurecedor"
-    tools:context=".EncontreAPalavra">
+    tools:context=".Diario">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="800dp"
-        android:layout_height="850dp"
+        android:id="@+id/txtOracao"
+        android:layout_width="890dp"
+        android:layout_height="940dp"
+        android:alpha="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/fundo2" />
+        app:srcCompat="@drawable/fundo3">
+
+    </ImageView>
 
     <ImageView
-        android:id="@+id/imgnuvem2"
+        android:id="@+id/imgnuvem1"
         android:layout_width="497dp"
         android:layout_height="112dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,20 +33,19 @@
         app:srcCompat="@drawable/nuvem1" />
 
     <ImageButton
-        android:id="@+id/btnBiblia"
-        android:layout_width="92dp"
-        android:layout_height="96dp"
-
-        android:background="@color/transp"
-        android:contentDescription="@string/AcessibilidadeBiblia"
+        android:id="@+id/btnDiario"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bibliagospel"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/biblifechada"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/btnPerfil"
@@ -63,6 +64,21 @@
         app:srcCompat="@drawable/baseline_person_24" />
 
     <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transp"
+        android:contentDescription="@string/AcessibilidadeHome"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        app:srcCompat="@drawable/outline_church_24" />
+
+    <ImageButton
         android:id="@+id/btnDoar"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -79,105 +95,123 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/btnHome"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@color/transp"
-        android:contentDescription="@string/AcessibilidadeHome"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/outline_church_24" />
+        android:id="@+id/btnBiblia"
+        android:layout_width="92dp"
+        android:layout_height="96dp"
 
-    <ImageButton
-        android:id="@+id/btnDiario"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
+        android:background="@color/transp"
+        android:contentDescription="@string/AcessibilidadeBiblia"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imgnuvem1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
-        app:srcCompat="@drawable/biblifechada"
-        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="@+id/txtMail"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bibliagospel"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txtEncontre"
-        android:layout_width="294dp"
-        android:layout_height="119dp"
+        android:id="@+id/txtPalavraIntercedora"
+        android:layout_width="339dp"
+        android:layout_height="305dp"
         android:fontFamily="@font/marvel"
-        android:shadowColor="@color/white"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowRadius="7"
-        android:text="@string/Encontrando"
+        android:text="@string/VersículoIntercessao"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="46dp"
+        android:textColor="@color/amareloAngelical"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
-
-    <EditText
-        android:id="@+id/editTextPesquisa"
-        android:layout_width="295dp"
-        android:layout_height="64dp"
-        android:ems="10"
-        android:hint="Digite o Versículo"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.775"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="43dp"
-        android:layout_height="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355"
-        app:srcCompat="@drawable/baseline_search_24" />
+        app:layout_constraintVertical_bias="0.143" />
 
     <TextView
-        android:id="@+id/txtVersiculo"
+        android:id="@+id/txtVersiculoIntercessao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/marvel"
-        android:textColor="@color/black"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowRadius="7"
+        android:text="@string/versiculoIntercessao"
+        android:textColor="@color/azulbebe"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/txtOracaoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marvel"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowRadius="7"
+        android:text="@string/oracao"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/txtOracao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marvel"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowRadius="7"
+        android:text="@string/oracao2"
+        android:textAlignment="center"
+        android:textColor="@color/azulbebe"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <ImageButton
+        android:id="@+id/btnMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_arredondado"
+        android:contentDescription="@string/AcessibilidadeBiblia"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.55"
+        app:srcCompat="@drawable/maiil"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btnPesquisar"
-        android:layout_width="71dp"
-        android:layout_height="71dp"
-        android:background="@color/transp"
-        android:backgroundTint="@color/transp"
-        android:contentDescription="@string/AcessibilidadePesquisar"
+    <TextView
+        android:id="@+id/txtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Mail"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.712"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

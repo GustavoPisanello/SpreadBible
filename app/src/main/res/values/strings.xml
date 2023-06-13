@@ -3,11 +3,33 @@
     <string name="falecom">Fale com Deus</string>
     <string name="palavraDia">O Senhor é meu pastor, e nada me faltará</string>,
     <string name="versiculoDia">Salmos, 23</string>
-    <string name="Encontrando"> Encontre<br></br> Palavra </string>
+    <string name="Encontrando"> Encontre a Palavra </string>
     <string name="EncontrandoA"> a </string>
     <string name="AcessibilidadeHome">Botão Home</string>
     <string name="AcessibilidadeBiblia">Botão Bíblia</string>
     <string name="AcessibilidadeDoar">Botão Doar</string>
     <string name="AcessibilidadePerfil">Botão Perfil</string>
+    <string name="AcessibilidadePesquisar">Botão Pesquisar</string>
+    <string name="VersículoIntercessao"> O meu intercessor é meu amigo,
+        quando diante de Deus correm lágrimas dos meus olhos; ele defende  a causa do homem perante Deus,
+        como quem defendea causa de um amigo.</string>
+    <string name="versiculoIntercessao">Jó 16:20-21</string>
+    <string name="oracao">Peça a sua</string>
+    <string name="oracao2">oração</string>
+    <string name="Mail">projetoOracaoSpreadbible.dev@gmail.com</string>
+    <string name="Doacao">Colabore com a</string>
+    <string name="Doacao1">organização</string>
+    <string name="ONG">Faça sua doação</string>
+    <string name="DOE">DOE</string>
+    <string name="Login">Login</string>
+    <string name="digiteNome">Nome</string>
+    <string name="digiteSenha2">Confirme a Senha</string>
+    <string name="digiteSenha">Senha</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="Widget">Já rezou hoje?</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="textoCadastro">Não possui um login? Clique aqui para se cadastrar:</string>
+    <string name="cadastrar">Cadastrar</string>
+
 
 </resources>
