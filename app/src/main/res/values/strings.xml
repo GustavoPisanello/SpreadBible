@@ -10,6 +10,7 @@
     <string name="AcessibilidadeDoar">Botão Doar</string>
     <string name="AcessibilidadePerfil">Botão Perfil</string>
     <string name="AcessibilidadePesquisar">Botão Pesquisar</string>
+    <string name="AcessibilidadScroll">Texto com Scroll</string>
     <string name="VersículoIntercessao"> O meu intercessor é meu amigo,
         quando diante de Deus correm lágrimas dos meus olhos; ele defende  a causa do homem perante Deus,
         como quem defendea causa de um amigo.</string>
@@ -30,6 +31,7 @@
     <string name="app_widget_description">This is an app widget description</string>
     <string name="textoCadastro">Não possui um login? Clique aqui para se cadastrar:</string>
     <string name="cadastrar">Cadastrar</string>
+
 
 
 </resources>

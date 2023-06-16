@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.content.Context;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,8 +81,9 @@ public class EncontreAPalavra extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String pesquisa = edtPesquisa.getText().toString();
+                edtPesquisa.setMovementMethod(new ScrollingMovementMethod());
                 Tarefa tarefa = new Tarefa();
-                tarefa.execute("https://www.abibliadigital.com.br/api/"+ pesquisa);
+                tarefa.execute("https://www.abibliadigital.com.br/api/verses/nvi/"+ pesquisa);
                 // verses/nvi/sl/23/1
             }
         });
@@ -103,11 +107,12 @@ public class EncontreAPalavra extends AppCompatActivity {
 
         if(dadosAPI != null){
             for(DadosAPI dadosAPI : dadosAPI) {
-                txtVersiculo.append(dadosAPI.getText() + "\n");
+                txtVersiculo.append(dadosAPI.getText() + " ");
             }
             }
         else{
-            txtVersiculo.setText("Oi");
+            Toast.makeText(EncontreAPalavra.this, "Erro no formato da pesquisa. Tente novamente", Toast.LENGTH_SHORT).show();
+
         }
     }
 }

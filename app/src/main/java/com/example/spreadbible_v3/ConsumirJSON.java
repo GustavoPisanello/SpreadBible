@@ -17,26 +17,17 @@ public class ConsumirJSON {
         try{
 
             JSONObject jsonObject = new JSONObject(jsonString);
-            JSONArray jsonArray = jsonObject.getJSONArray("book");
+            JSONArray versosArray = jsonObject.getJSONArray("verses");
 
-            for(int i = 0; i < jsonArray.length(); i++){
-                jsonObject = jsonArray.getJSONObject(i);
-
+            int i;
+            for(i = 0; i < versosArray.length(); i++ ){
+                JSONObject versi = versosArray.getJSONObject(i);
                 DadosAPI dadosAPI = new DadosAPI();
-
-                dadosAPI.setBook(jsonObject.getString("book"));
-                dadosAPI.setAbbrev(jsonObject.getString("abbrev"));
-                dadosAPI.setName(jsonObject.getString("name"));
-                dadosAPI.setChapter(jsonObject.getString("chapter"));
-                dadosAPI.setAuthor(jsonObject.getString("author"));
-                dadosAPI.setGroup(jsonObject.getString("group"));
-                dadosAPI.setVersion(jsonObject.getString("version"));
-                dadosAPI.setChapter(jsonObject.getString("chapter"));
-                dadosAPI.setNumber(jsonObject.getString("number"));
-                dadosAPI.setText(jsonObject.getString("text"));
-
+                dadosAPI.setText(versi.getString("text"));
                 dadosList.add(dadosAPI);
             }
+
+            Log.i("EU", "Resposta do servidor 4:" + dadosList);
             return dadosList;
         }
 
