@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/escurecedor"
+    android:backgroundTint="@color/escurecedor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="498dp"
+        android:layout_height="892dp"
+        android:alpha="0.5"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        app:srcCompat="@drawable/fundo1" />
+
+    <Button
+        android:id="@+id/btnFale"
+        android:layout_width="169dp"
+        android:layout_height="63dp"
+        android:background="@drawable/btn_arredondado"
+        android:backgroundTint="@color/azulbebe"
+        android:text="@string/falecom"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:onClick="ActivityEncontre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <ImageView
+        android:id="@+id/imgnuvem1"
+        android:layout_width="497dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/nuvem1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeHome"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/outline_church_24" />
+
+        <ImageButton
+            android:id="@+id/btnDiario"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginRight="0dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/biblifechada"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btnBiblia"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+
+            android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadeBiblia"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/bibliagospel"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="182dp"
+            tools:layout_editor_absoluteY="618dp" />
+
+        <ImageButton
+            android:id="@+id/btnDoar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/AcessibilidadeDoar"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/baseline_handshake_24"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_weight="1"
+            android:background="@color/transp"
+            android:contentDescription="@string/AcessibilidadePerfil"
+            app:srcCompat="@drawable/baseline_person_24" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPalavraDia"
+        android:layout_width="293dp"
+        android:layout_height="182dp"
+        android:fontFamily="@font/marvel"
+        android:shadowColor="@color/amareloAngelical"
+        android:shadowDx="2"
+        android:shadowRadius="7"
+        android:text="@string/palavraDia"
+        android:textAlignment="center"
+        android:textColor="@color/amareloAngelical"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <TextView
+        android:id="@+id/txtVersiculoDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/marvel"
+        android:shadowColor="@color/azulbebe"
+        android:shadowDx="2"
+        android:shadowRadius="7"
+        android:text="@string/versiculoDia"
+        android:textColor="@color/azulbebe"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageView
+        android:id="@+id/imgAspasEsq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351"
+        app:srcCompat="@drawable/aspas" />
+
+    <ImageView
+        android:id="@+id/imgAspasDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066"
+        app:srcCompat="@drawable/aspas22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

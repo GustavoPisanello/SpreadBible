@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EncontreAPalavra extends AppCompatActivity {
+    private List<DadosAPI> dadosAPI = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,17 +80,7 @@ public class EncontreAPalavra extends AppCompatActivity {
                 String pesquisa = edtPesquisa.getText().toString();
                 Tarefa tarefa = new Tarefa();
                 tarefa.execute("https://www.abibliadigital.com.br/api/"+ pesquisa);
-                DadosAPI dadosAPI = ConsumirJSON.Dados("https://www.abibliadigital.com.br/api/"+ pesquisa);
                 // verses/nvi/sl/23/1
-
-                TextView txtVersiculo = findViewById(R.id.txtVersiculo);
-
-                if(dadosAPI != null) {
-
-                    txtVersiculo.setText(dadosAPI.text);
-                } else {
-                    txtVersiculo.setText("Oi");
-                }
             }
         });
     }
@@ -103,6 +94,20 @@ public class EncontreAPalavra extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s){
+           dadosAPI = ConsumirJSON.jsonDados(s);
+           exibirDados();
+        }
+    }
+    private void exibirDados() {
+        TextView txtVersiculo = findViewById(R.id.txtVersiculo);
+
+        if(dadosAPI != null){
+            for(DadosAPI dadosAPI : dadosAPI) {
+                txtVersiculo.append(dadosAPI.getText() + "\n");
+            }
+            }
+        else{
+            txtVersiculo.setText("Oi");
         }
     }
 }

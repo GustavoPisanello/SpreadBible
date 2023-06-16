@@ -11,37 +11,35 @@ import java.util.List;
 
 public class ConsumirJSON {
 
-    public static DadosAPI Dados(String jsonString){
+    public static List<DadosAPI> jsonDados(String jsonString){
         Log.i("EU", "Resposta do servidor:" + jsonString);
+        List<DadosAPI> dadosList = new ArrayList<DadosAPI>();
         try{
 
-            JSONObject retorno = new JSONObject(jsonString);
-            JSONObject livro = retorno.getJSONObject("book");
+            JSONObject jsonObject = new JSONObject(jsonString);
+            JSONArray jsonArray = jsonObject.getJSONArray("book");
 
-            String abbrev = livro.getString("abbrev");
-            String name = livro.getString("name");
-            String autor = livro.getString("author");
-            String grupo = livro.getString("group");
-            String versao = livro.getString("version");
+            for(int i = 0; i < jsonArray.length(); i++){
+                jsonObject = jsonArray.getJSONObject(i);
 
-            JSONObject cap = retorno.getJSONObject("chapter");
-            int chapter = cap.getInt("number");
-            int verses = cap.getInt("verses");
+                DadosAPI dadosAPI = new DadosAPI();
 
-            String versi = null;
+                dadosAPI.setBook(jsonObject.getString("book"));
+                dadosAPI.setAbbrev(jsonObject.getString("abbrev"));
+                dadosAPI.setName(jsonObject.getString("name"));
+                dadosAPI.setChapter(jsonObject.getString("chapter"));
+                dadosAPI.setAuthor(jsonObject.getString("author"));
+                dadosAPI.setGroup(jsonObject.getString("group"));
+                dadosAPI.setVersion(jsonObject.getString("version"));
+                dadosAPI.setChapter(jsonObject.getString("chapter"));
+                dadosAPI.setNumber(jsonObject.getString("number"));
+                dadosAPI.setText(jsonObject.getString("text"));
 
-            int i;
-            for(i = 0; i < verses; i++){
-                JSONArray v = retorno.getJSONArray("verses");
-                String texto = v.getJSONObject(i).getString("text");
-
-                versi = String.join("." , texto);
+                dadosList.add(dadosAPI);
             }
-
-            DadosAPI dadosAPI = new DadosAPI(abbrev, name, autor, grupo, versao, chapter, versi);
-
-            return dadosAPI;
+            return dadosList;
         }
+
         catch(Exception e){
             e.printStackTrace();
             return null;
