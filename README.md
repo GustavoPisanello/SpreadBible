@@ -105,10 +105,10 @@ Link do Vídeo Demonstrativo: https://drive.google.com/drive/folders/1S1dORh9bCk
 # Diagramas:
 
 ## MER
-<img src="" height="500px">
+<img src="Diagramas e Descrições/MER, DER e Diagrama de Classes - API Interna/MER.png" height="300px">
 
 ## DER
-<img src="" height="500px">
+<img src="Diagramas e Descrições/MER, DER e Diagrama de Classes - API Interna/DER.jpeg" height="400px">
 
 ## Diagrama de Classes
-<img src="" height="500px">
+<img src="Diagramas e Descrições/MER, DER e Diagrama de Classes - API Interna/Diagrama de Classe.jpeg" height="400px">
