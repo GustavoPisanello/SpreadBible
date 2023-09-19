@@ -2,53 +2,29 @@ package com.example.spreadbible_v3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.content.Context;
 
-public class MainActivity extends AppCompatActivity {
+public class IgrejaFav extends AppCompatActivity {
 
-    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_igreja_fav);
 
-        context = this;
-
-        Button btnEncontre = findViewById(R.id.btnEncontre);
-        Button btnIgrejaFav = findViewById(R.id.btnIgrejaFav);
         ImageButton btnBiblia = findViewById(R.id.btnBiblia);
         ImageButton btnDoar = findViewById(R.id.btnDoar);
         ImageButton btnDiario = findViewById(R.id.btnDiario);
         ImageButton btnPerfil = findViewById(R.id.btnPerfil);
         ImageButton btnHome = findViewById(R.id.btnHome);
 
-
-      btnEncontre.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              Intent intent = new Intent(MainActivity.this, EncontreAPalavra.class);
-              startActivity(intent);
-          }
-      });
-        btnIgrejaFav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, IgrejaFav.class);
-                startActivity(intent);
-            }
-        });
-
         btnBiblia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, EncontreAPalavra.class);
+                Intent intent = new Intent(IgrejaFav.this, EncontreAPalavra.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btnDoar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Doacao.class);
+                Intent intent = new Intent(IgrejaFav.this, Doacao.class);
                 startActivity(intent);
             }
         });
@@ -64,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btnDiario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Diario.class);
+                Intent intent = new Intent(IgrejaFav.this, Diario.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
+                Intent intent = new Intent(IgrejaFav.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -80,10 +56,9 @@ public class MainActivity extends AppCompatActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent = new Intent(IgrejaFav.this, MainActivity.class);
                 startActivity(intent);
             }
         });
     }
-
 }

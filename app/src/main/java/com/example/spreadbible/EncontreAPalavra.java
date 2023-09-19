@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.spreadbible_v3.R;
+
 public class EncontreAPalavra extends AppCompatActivity {
 
     @Override

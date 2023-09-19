@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.spreadbible_v3.R;
+
 public class MainActivity2 extends AppCompatActivity {
 
     @Override

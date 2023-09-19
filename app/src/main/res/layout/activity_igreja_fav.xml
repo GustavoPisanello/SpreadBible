@@ -4,39 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/escurecedor"
-    android:backgroundTint="@color/escurecedor"
-    tools:context=".MainActivity">
+    tools:context=".IgrejaFav">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="700dp"
-        android:alpha="0.5"
-        android:scaleType="fitCenter"
-        android:theme="@style/Theme.AppCompat.Light"
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fundo1" />
+        android:layout_height="900dp"
+        android:alpha="0.8"
+        app:srcCompat="@drawable/fundo11" />
 
     <Button
-        android:id="@+id/btnEncontre"
-        android:layout_width="169dp"
-        android:layout_height="63dp"
-        android:background="@drawable/btn_arredondado"
+        android:id="@+id/btnIgreja3"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
         android:backgroundTint="@color/azulbebe"
-        android:text="@string/falecom"
-        android:textColor="@color/white"
-        android:textSize="16sp"
+        android:text="@string/Igreja4"
+        app:icon="@drawable/baseline_star_border_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
+        android:id="@+id/txtSuaIgreja"
+        android:layout_width="293dp"
+        android:layout_height="182dp"
+        android:fontFamily="@font/marvel"
+        android:text="@string/AcheSuaIgreja"
+        android:textAlignment="center"
+        android:textColor="@color/amareloAngelical"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
 
     <ImageView
         android:id="@+id/imgnuvem1"
@@ -59,9 +68,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/outline_church_24" />
 
     <ImageButton
@@ -71,11 +80,11 @@
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintEnd_toEndOf="@+id/imgnuvem1"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98"
+        app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/biblifechada"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
@@ -88,14 +97,13 @@
         android:contentDescription="@string/AcessibilidadeBiblia"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintEnd_toEndOf="@+id/imgnuvem1"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bibliagospel"
         tools:ignore="MissingConstraints" />
-
 
     <ImageButton
         android:id="@+id/btnDoar"
@@ -106,8 +114,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="@+id/imgnuvem1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.98"
         app:srcCompat="@drawable/baseline_handshake_24"
@@ -121,83 +129,50 @@
         android:background="@color/transp"
         android:contentDescription="@string/AcessibilidadePerfil"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.98"
         app:srcCompat="@drawable/baseline_person_24" />
 
-    <TextView
-        android:id="@+id/txtPalavraIntercedora"
-        android:layout_width="293dp"
-        android:layout_height="182dp"
-        android:fontFamily="@font/marvel"
-        android:shadowColor="@color/amareloAngelical"
-        android:shadowDx="2"
-        android:shadowRadius="7"
-        android:text="@string/palavraDia"
-        android:textAlignment="center"
-        android:textColor="@color/amareloAngelical"
-        android:textSize="50dp"
+    <Button
+        android:id="@+id/btnIgreja1"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/azulbebe"
+        android:text="@string/Igreja1"
+        app:icon="@drawable/baseline_star_border_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145" />
-
-    <TextView
-        android:id="@+id/txtVersiculoDia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/marvel"
-        android:shadowColor="@color/azulbebe"
-        android:shadowDx="2"
-        android:shadowRadius="7"
-        android:text="@string/versiculoDia"
-        android:textColor="@color/azulbebe"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403" />
-
-    <ImageView
-        android:id="@+id/imgAspasEsq"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.913"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
-        app:srcCompat="@drawable/aspas" />
-
-    <ImageView
-        android:id="@+id/imgAspasDir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.066"
-        app:srcCompat="@drawable/aspas22" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <Button
-        android:id="@+id/btnIgrejaFav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_arredondado"
+        android:id="@+id/btnIgreja"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
         android:backgroundTint="@color/azulbebe"
-        android:text="@string/IgrejaFav"
+        android:text="@string/Igreja2"
+        app:icon="@drawable/baseline_star_border_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
+        app:layout_constraintVertical_bias="0.535" />
+
+    <Button
+        android:id="@+id/btnIgreja2"
+        android:layout_width="305dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/azulbebe"
+        android:text="@string/Igreja3"
+        app:icon="@drawable/baseline_star_border_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,6 +31,14 @@
     <string name="app_widget_description">This is an app widget description</string>
     <string name="textoCadastro">Não possui um login? Clique aqui para se cadastrar:</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="AcheSuaIgreja">Ache a sua igreja favorita!</string>
+    <string name="Lista1">Igreja Raimundo Pereira</string>
+    <string name="title_activity_api">api</string>
+    <string name="IgrejaFav">Igrejas Favoritas</string>
+    <string name="Igreja1">Bola de Neve</string>
+    <string name="Igreja2">Kyrios</string>
+    <string name="Igreja3">Videira Lapa</string>
+    <string name="Igreja4">Santuário São Judas</string>
 
 
 
